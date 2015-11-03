@@ -389,6 +389,7 @@ this.require.define({"modules/libs":function(exports, require, module){(function
       this.update = bind(this.update, this);
       this.keyframe = bind(this.keyframe, this);
       this.sk = skrollr.init(this);
+      $('#faq').css('display', 'block');
       $('#p5-faq').animatedModal({
         animatedIn: 'zoomIn',
         animatedOut: 'zoomOut',
@@ -413,11 +414,6 @@ this.require.define({"modules/libs":function(exports, require, module){(function
       switch (id) {
         case 'steps':
           return this.manageSteps(element, name, direction);
-        case 'step1-pic':
-        case 'step2-pic':
-        case 'step3-pic':
-        case 'step4-pic':
-          return this.manageStepPic(element, name, direction);
         default:
           return this.manageAnimation(element, name, direction);
       }

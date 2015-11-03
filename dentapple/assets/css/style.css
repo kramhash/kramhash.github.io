@@ -3118,15 +3118,13 @@ body {
     margin: 0 0 0 60px; }
   /* line 195, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #steps .pic .step1-pic, #steps .pic .step2-pic, #steps .pic .step3-pic, #steps .pic .step4-pic {
-    -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-            transform: scale(0); }
+    opacity: 0; }
   /* line 197, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #steps .pic td:nth-child(1) {
     vertical-align: top; }
     /* line 199, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
     #steps .pic td:nth-child(1) .step1-pic {
-      margin: 0; }
+      margin: 15px 0 0; }
   /* line 201, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #steps .pic td {
     vertical-align: bottom; }
@@ -3242,9 +3240,7 @@ body {
 
 /* line 287, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 .p4-1-pic, .p4-2-pic, .p4-3-pic {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0); }
+  opacity: 0; }
 
 /***
  *---------------------------------------------------------------------------
@@ -3293,17 +3289,21 @@ body {
   display: block;
   margin: 70px 0 0 120px; }
 
+/* line 327, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+#p5-store {
+  width: 150px; }
+
 /***
  *---------------------------------------------------------------------------
  * footer
  *---------------------------------------------------------------------------
  */
-/* line 335, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 336, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 #footer1 {
   height: 90px;
   background-color: #dd5532;
   overflow: hidden; }
-  /* line 339, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+  /* line 340, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #footer1 .flex-inner {
     width: 300px;
     margin: 25px auto;
@@ -3316,43 +3316,44 @@ body {
     justify-content: space-between;
     -ms-flex-pack: justify; }
 
-/* line 344, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 345, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 .footer-tw, .footer-fb {
   display: block; }
 
-/* line 347, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 348, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 .button .footer-tw {
   margin: 8px 0 0; }
 
-/* line 350, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 351, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 .button .footer-fb {
   margin: 7px 0 0; }
 
-/* line 353, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 354, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 #footer2 {
   height: 90px;
   background-color: #cb0c18;
   overflow: hidden; }
 
-/* line 357, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 358, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 .footer-logo {
   margin: 25px auto 0; }
 
-/* line 362, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 363, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 #faq {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden; }
-  /* line 367, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+  overflow: hidden;
+  display: none; }
+  /* line 369, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #faq .inner {
     width: 950px;
     margin: auto; }
-    /* line 370, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+    /* line 372, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
     #faq .inner > div {
       float: left;
       width: 470px; }
-  /* line 373, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+  /* line 375, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
   #faq .flex-inner {
     width: 950px;
     margin: auto;
@@ -3370,7 +3371,7 @@ body {
     -o-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify; }
-    /* line 378, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+    /* line 380, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
     #faq .flex-inner > .box {
       -webkit-box-flex: 470px;
       box-flex: 470px;
@@ -3380,6 +3381,6 @@ body {
       flex: 470px;
       margin: 0 0 30px 0; }
 
-/* line 382, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
+/* line 384, /Users/mark/works/dentapple/dentapple-src/source/assets/css/style.sass */
 #faq-header {
   margin: 38px auto 40px; }
