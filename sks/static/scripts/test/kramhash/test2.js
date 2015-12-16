@@ -283,7 +283,8 @@ this.require.define({"modules/common/enterframe":function(exports, require, modu
 
     TestClass.prototype.init = function() {
       TestClass.__super__.init.call(this);
-      return this.mat.setTexture('tex', new BABYLON.Texture('../../static/scripts/test/kramhash/textures/test3.jpg', this.bgScene));
+      this.mat.setTexture('tex', new BABYLON.Texture('../../static/scripts/test/kramhash/textures/test.jpg', this.bgScene));
+      return this.mat.setTexture('mask', new BABYLON.Texture('../../static/scripts/test/kramhash/textures/texture.jpg', this.bgScene));
     };
 
     TestClass.prototype.render = function() {
