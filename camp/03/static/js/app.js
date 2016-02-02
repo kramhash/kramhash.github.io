@@ -80,7 +80,7 @@
 	    this.h = window.innerHeight;
 
 	    this.renderer = new PIXI.autoDetectRenderer(this.w, this.h, { backgroundColor: 0x000000 });
-	    PIXI.loader.add('static/images/bg.png').add('static/images/sample_01.jpg').load(this.loadComplete.bind(this));
+	    PIXI.loader.add('static/images/bg.png').add('static/images/sample_02.jpg').add('static/images/sample_03.jpg').load(this.loadComplete.bind(this));
 	    this.stage = new PIXI.Container();
 	    document.getElementById('kv').appendChild(this.renderer.view);
 	  }
