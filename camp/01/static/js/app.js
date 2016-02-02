@@ -111,18 +111,33 @@
 	      var min = 5;
 	      var gamma = event.gamma + 90;
 	      var PI = Math.PI / 180;
+	      var section = 4;
+	      var anglemin = 45;
+	      var angle = (180 - anglemin * 2) / (section + 1);
+	      var angle2 = angle * 2;
+	      for (var i = 0; i < section; i++) {
+	        var _anglemin = anglemin + angle * i;
+	        var _anglemax = _anglemin + angle2;
+	        var v = (Math.max(Math.min(gamma, _anglemax), _anglemin) - _anglemin) / angle2 * 180;
+	        this.f.uniforms.offset1.value[i] = Math.sin(v * PI);
 
-	      var g1 = (Math.max(Math.min(gamma, 70), 30) - 30) / 40 * 180;
-	      var g2 = (Math.max(Math.min(gamma, 90), 50) - 50) / 40 * 180;
-	      var g3 = (Math.max(Math.min(gamma, 110), 70) - 70) / 40 * 180;
-	      var g4 = (Math.max(Math.min(gamma, 130), 90) - 90) / 40 * 180;
+	        console.log(angle, angle2, _anglemin, _anglemax, Math.sin(v));
 
-	      console.log(Math.sin(g1 * PI), Math.sin(g2 * PI), Math.sin(g3 * PI));
+	        // let v = (Math.max(Math.min(gamma, anglemin + angle * (i + 1)), _angle) - _angle) / angle * 180;
+	        // console.log(angle, _angle, anglemin + angle * (i + 1), Math.sin(v * PI));
+	        // this.f.uniforms.offset1.value[i] = Math.sin(v * PI);
+	      }
+	      // let g1 = (Math.max(Math.min(gamma, 70), 30) - 30 ) / 40 * 180;
+	      // let g2 = (Math.max(Math.min(gamma, 90), 50) - 50 ) / 40 * 180;
+	      // let g3 = (Math.max(Math.min(gamma, 110), 70) - 70) / 40 * 180;
+	      // let g4 = (Math.max(Math.min(gamma, 130), 90) - 90) / 40 * 180;
 
-	      this.f.uniforms.offset1.value[0] = Math.sin(g1 * PI);
-	      this.f.uniforms.offset1.value[1] = Math.sin(g2 * PI);
-	      this.f.uniforms.offset1.value[2] = Math.sin(g3 * PI);
-	      this.f.uniforms.offset1.value[3] = Math.sin(g4 * PI);
+	      // console.log(Math.sin(g1 * PI), Math.sin(g2 * PI), Math.sin(g3 * PI));
+
+	      // this.f.uniforms.offset1.value[0] = Math.sin(g1 * PI);
+	      // this.f.uniforms.offset1.value[1] = Math.sin(g2 * PI);
+	      // this.f.uniforms.offset1.value[2] = Math.sin(g3 * PI);
+	      // this.f.uniforms.offset1.value[3] = Math.sin(g4 * PI);
 	      // console.log(this.f.uniforms.offset1)
 	      // this.f.uniforms.offset.value = gamma / 30;
 	    }
