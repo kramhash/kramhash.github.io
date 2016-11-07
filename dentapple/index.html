@@ -21,7 +21,7 @@
       <div class="p" id="section1">
         <div class="left"></div>
         <div class="right"></div>
-        <div class="container">
+        <div class="container allow-overflow">
           <div id="cover">
             <img width="608" height="668" src="assets/images/cover.jpg" />
           </div>
@@ -29,8 +29,10 @@
             <h1 class="title"></h1>
             <h2 class="p1-header"></h2>
             <div class="p1-body"></div>
-            <a class="button button1 slide" href="http://dentapple.theshop.jp/items/2136961" id="p1-buy">
-              <div class="p1-buy"></div>
+            <a class="button button1 slide" href="javascript:void(0);" id="p1-nextsell" title="今年度の販売について">
+              <div class="p1-nextsell"></div>
+            </a><a class="button button1 slide" href="javascript:void(0);" id="p1-seller" title="取り扱い店舗募集中">
+              <div class="p1-seller"></div>
             </a>
           </div>
         </div>
@@ -113,32 +115,6 @@
                 <div class="p3-dev-header"></div>
                 <a class="sato" href="http://www.satodentalclinic-ebis.jp/" target="_blank" title="さとうデンタルクリニック"></a>
               </div>
-              <div class="p3-coop">
-                <div class="p3-coop-header"></div>
-                <div class="flex-inner">
-                  <div class="box">
-                    <a class="yoko" href="http://www.sankikai-dental.com/" target="_blank" title="横山デンタルクリニック"></a>
-                  </div>
-                  <div class="box">
-                    <a class="kamiya" href="http://kamiyacho-dc.jp/" target="_blank" title="神谷町デンタルクリニック"></a>
-                  </div>
-                  <div class="box">
-                    <a class="akiba" href="http://www.oralcc.jp/" target="_blank" title="アキバ歯科"></a>
-                  </div>
-                  <div class="box">
-                    <a class="yuki" href="http://www.yukishita-dental.com/" target="_blank" title="雪下歯科医院"></a>
-                  </div>
-                  <div class="box">
-                    <a class="hiro" href="http://www.nona.dti.ne.jp/piropiro/" target="_blank" title="HIRO DENTAL CLINIC"></a>
-                  </div>
-                  <div class="box">
-                    <a class="daie" href="http://www.oosaki-dc.com/" target="_blank" title="ダイエー歯科"></a>
-                  </div>
-                </div>
-                <div class="p3-coop-caution txt">
-                  提携歯科医院ではDentappleの診断結果をもとに診察を受けることができます。
-                </div>
-              </div>
             </div>
             <div class="box box2"></div>
           </div>
@@ -183,13 +159,24 @@
           <div class="p5-header" data--50-bottom="opacity:1" data-10-bottom="opacity:0"></div>
           <div class="p5-body" data--50-bottom="opacity:1" data-50-bottom="opacity:0"></div>
           <div class="flex-inner">
-            <a class="button button1 slide" data--50-bottom="opacity:1" data-bottom-top="opacity:0" href="http://dentapple.theshop.jp/items/2136961" target="_blank" title="インターネットで買う">
-              <div class="p5-web"></div>
-            </a><a class="button button1 slide" data--50-bottom="opacity:1" data-bottom-top="opacity:0" href="http://shunpachi.jp/2015/11/08/1426" id="p5-store" target="_blank" title="店舗で買う">
+            <a class="button button1 slide" data--50-bottom="opacity:1" data-bottom-top="opacity:0" href="#store-list" id="p5-store" title="取り扱い店舗一覧">
               <div class="p5-store"></div>
+            </a><a class="button button1 slide" data--50-bottom="opacity:1" data-bottom-top="opacity:0" href="http://dentapple.theshop.jp/items/2136961" target="_blank" title="インターネットで買う">
+              <div class="p5-web"></div>
             </a>
           </div>
           <a class="p5-faq" data-150-center="opacity:1" data-bottom="opacity:0" href="#faq" id="p5-faq"></a>
+        </div>
+      </div>
+      <div class="p bgcolor2" id="section6">
+        <div class="container">
+          <h3 class="p6-header" data--50-bottom="opacity:1;transform:translate(0,0)" data-bottom="opacity:0;transform:translate(0,50px)"></h3>
+          <div class="contents">
+            <div class="p6-contents"></div>
+          </div>
+          <a class="button button1 slide" href="mailto:info@dentapple.jp" id="p6-btn">
+            <div class="p6-btn"></div>
+          </a>
         </div>
       </div>
       <div id="footer">
@@ -245,6 +232,59 @@
           <div class="box">
             <div class="q5" style="margin-top: -40px"></div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="store-list">
+      <div class="modal-content">
+        <h2 class="store-header" id="store-header"></h2>
+        <div style="width:1000px;margin:auto;position:relative">
+          <a class="bt-close close-store-list" href="javscript:void(0)"></a>
+        </div>
+        <div class="inner close-store-list">
+          <h2 class="store-h2">
+            Dentappleは「旬八青果店」にて取り扱いがございます。<br>以下のいずれかの店舗よりお買い求めください。
+          </h2>
+          <ul>
+            <li>
+              <h3>
+                大崎店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                目黒警察署前店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                東急百貨店本店店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                赤坂店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                五反田店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                下目黒六丁目店
+              </h3>
+            </li>
+            <li>
+              <h3>
+                三田店
+              </h3>
+            </li>
+          </ul>
+          <p>
+            店舗の詳細は旬八青果店HPにてご確認ください→<a href="http://shunpachi.jp" target="_blank">http://shunpachi.jp</a>
+          </p>
         </div>
       </div>
     </div>
